@@ -1,8 +1,6 @@
 import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
 
-
-
-const octokit = new Octokit({ auth: `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` });
+const octokit = new Octokit();
 
 $("form").on("submit", function (event) {
 	event.preventDefault();
