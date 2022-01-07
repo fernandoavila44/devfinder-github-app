@@ -1,0 +1,196 @@
+@import "fonts";
+@import "variables";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+// General styles for h1,h2,p,i
+
+h1, h2, div article p{
+    color: $bigfont-white-color;
+}
+
+
+body{
+    background-color: $neutral-bg-color;
+    font-family: 'Space Mono', monospace;
+
+    main{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 7vh 0;
+       
+        section{
+
+            width: 85%;
+            
+            .header-controltheme{
+                h1{
+                    font-size: 1.8rem;
+                }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                button{
+                    background: none;
+                    border: none;
+                    font-size: 1.3rem;
+                    color: $bigfont-white-color;
+                    i{
+                        margin-left: 1rem;
+                    }
+                }
+               
+            }
+
+            form{
+
+                background-color: $neutral-in-bg-color;
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                border-radius: 1rem;
+                justify-content: space-between;
+                padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+                div{
+                    display: flex;
+                    align-items: center;
+                    width: 80%;
+                    
+                    i{
+                        margin-right: 0.5rem;
+                        font-size: 1.2rem;
+                        color: $azure-radiance-blue;
+                    }
+
+                    input{
+                        border: none;
+                        background:none;
+                        width: 90%;
+                        color: $general-grey-font;
+                        &::placeholder{
+                            color: $general-grey-font;
+                        }
+
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+
+                button{
+                    background-color: $azure-radiance-blue;
+                    border: none;
+                    border-radius: 0.5rem;
+                    color: $bigfont-white-color;
+                    font-weight: 700;
+                    font-size: 0.9rem;
+                    padding: 0.8rem 0;
+                    width: 20%;
+                }
+            }
+
+            .dev-info{
+                background-color: $neutral-in-bg-color;
+                padding: 2rem 7%;
+                border-radius: 1rem;
+
+                .dev-info-avatar-name{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 2rem;
+                    img{
+                        width: 25%;
+                        border-radius: 50%;
+                        margin-right: 7%;
+                    }
+
+                    div{
+                        div{
+                            h2{
+                                font-weight: 700;
+                                font-size: 1.2rem;
+                            }
+                            a{
+                                color: $azure-radiance-blue;
+                                text-decoration: none;
+                            }
+                        }
+                        p{
+                            color: $general-grey-font;
+                        }
+                    }
+                }
+
+                &>p{
+                    color: $general-grey-font;
+                    line-height: 1.7rem;
+                    text-align: justify;
+                }
+
+                .dev-info-followers{
+                    background-color: $neutral-bg-color;
+                    border-radius: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    margin: 2rem 0;
+                    padding: 1.5rem 0;
+
+                    article{
+                        text-align: center;
+                        width: 30%;
+                        h3{
+                            color: $general-grey-font;
+                            font-size: 0.8rem;
+                            font-weight: 400;
+                            margin-bottom: 1rem;
+                        }
+                        p{
+                            font-weight: 700;
+                        }
+                    }
+
+                    
+                    
+                }
+
+                .dev-info-social-links{
+                    color: $general-grey-font;
+                    div{
+                        div{
+                           margin-bottom: 1rem; 
+                           overflow: hidden;
+                           a{
+                               color: $general-grey-font;
+                               text-decoration: none;
+                           }
+                           i{
+                               font-size: 1.3rem;
+                           }
+                        }
+                    }
+                }
+
+        
+            }
+
+        
+    
+        }
+
+
+    }
+    
+}
+
+// Mediaqueries
+
+@import "mediaqueries";

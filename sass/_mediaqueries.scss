@@ -1,0 +1,139 @@
+@media(min-width: 641px) and (max-width: 1007px){
+
+    body{
+        main{
+            section{
+                width: 75%;
+
+                form{
+                    button{
+                        width: 6.25rem;
+                    }
+                }
+
+                .dev-info{
+
+                    .dev-info-avatar-name{
+                        img{
+                            width: 7.5rem;
+                        }
+                    }
+                    .dev-info-followers{
+                        article{
+                            text-align: start;
+                        }
+                    }
+                    .dev-info-social-links{
+                        display: flex;
+                        div{
+                            width: 50%;
+                            div{
+                                width: 100%;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(min-width: 1008px){
+
+    body{
+        main{
+            height: 100vh;
+            margin: 0;
+            section{
+            
+                width: 50%;
+
+                .header-controltheme{
+                    button{
+                        cursor: pointer;
+                    }
+                }
+
+                form{
+                    div{
+                        input{
+                            font-size: 1rem;
+                        }
+                    }
+                    button{
+                        width: 6.25rem;
+                        font-size: 1.2rem;
+                        cursor: pointer;
+                    }
+                }
+
+                .dev-info{
+
+                display: grid;
+                grid-template-columns: 0.5fr 1fr 1fr;
+                grid-template-rows: auto auto auto;
+                grid-template-areas: "logname logname logname" ". bio bio" ". repos repos" ". social social";
+
+                    .dev-info-avatar-name{
+                        grid-area: logname;
+                        display: grid;
+                        grid-template-columns: 0.5fr 1fr 1fr;
+                        grid-template-rows: auto;
+                        grid-template-areas: "avatar nameuser nameuser";
+                        margin: 0;
+                        img{
+                            grid-area: avatar;
+                            place-self: center start;
+                            width: 90%;
+                            margin: 0;
+                        }
+
+                        &>div{
+                            grid-area: nameuser;
+                            place-self: stretch;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            width: 100%;
+                            div{
+                                width: 45%;
+                            
+                            }
+                            p{
+                                width: 45%;
+                                text-align: right;
+                            }
+                        }
+                    }
+
+                    p{
+                        grid-area: bio;
+                    }
+
+                    .dev-info-followers{
+                        grid-area: repos;
+                        article{
+                            text-align: start;
+                        }
+                    }
+
+                    .dev-info-social-links{
+                        grid-area: social;
+                        display: flex;
+                        div{
+                            width: 50%;
+                            div{
+                                width: 100%;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+        }
+    }
+
+
+}
