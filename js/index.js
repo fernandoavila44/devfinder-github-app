@@ -117,7 +117,14 @@ function test(parm1){
 			
 	} else {
 		if (parm1 === "Not Found") {
+
+			$(".dev-info-avatar-name > img").attr("src", "images/github-mark.png");
+
 			$("h2").text("User Not Found!");
+
+			$(".dev-info p").text("-");
+
+			$(".dev-info-social-links div span,a").text("-");
 		}
 		
 	}
